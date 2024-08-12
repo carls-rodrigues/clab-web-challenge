@@ -5,7 +5,7 @@ import { BiSolidColorFill } from "react-icons/bi";
 import { GoPencil, GoStar, GoStarFill } from "react-icons/go";
 import { IoCloseOutline } from "react-icons/io5";
 
-import { Note } from "@/app/@types/note";
+import { Note } from "@/@types/note";
 import ColorSelect from "@/app/components/color-select";
 import useNotes from "@/app/hooks/notes";
 import cn from "@/lib/clsx";

@@ -4,7 +4,7 @@ import { getCookie } from "cookies-next";
 import { createContext, useEffect, useRef, useState } from "react";
 import { Bounce, toast, TypeOptions } from "react-toastify";
 
-import { type Note, type Notes } from "@/app/@types/note";
+import { type Note, type Notes } from "@/@types/note";
 import useApi from "@/app/helpers/api";
 
 type ContextNotesType = {

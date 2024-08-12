@@ -2,7 +2,7 @@
 
 import axiosClient from "@/lib/axios";
 
-import { Note } from "../@types/note";
+import { Note } from "../../@types/note";
 
 export default () => {
   return {

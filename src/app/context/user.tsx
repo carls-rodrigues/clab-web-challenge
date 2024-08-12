@@ -5,7 +5,7 @@ import { createContext, useEffect, useState } from "react";
 
 import useApi from "@/app/helpers/api";
 
-import { type User } from "../@types/note";
+import { type User } from "../../@types/note";
 
 type UserContextType = {
   userId: string | undefined;

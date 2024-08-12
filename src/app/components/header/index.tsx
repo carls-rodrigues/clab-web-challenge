@@ -35,15 +35,15 @@ export default function Header() {
     <header
       className={cn(
         "w-full h-[57px]",
-        "flex items-center gap-7",
-        "px-12",
+        "flex items-center gap-2 md:gap-7",
+        "px-4 md:px-12",
         "bg-white dark:bg-primary",
         "shadow-header",
       )}
     >
       <div className="flex gap-4 items-center">
         <Image src="/logo.png" alt="Logo" width={36} height={36} />
-        <h3 className="text-primary text-sm font-normal dark:text-white cursor-default">
+        <h3 className="text-primary text-sm font-normal dark:text-white cursor-default hidden md:block">
           CoreNotes
         </h3>
       </div>

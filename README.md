@@ -1,15 +1,38 @@
-# Project Title
-Corelab Web Challenge
+# CoreNotes Frontend
 
-## Demo link:
-Access my site at [https://clab-web-challenge.vercel.app/](https://clab-web-challenge.vercel.app/)
+
+## Deploy & Repositórios
+
+- [Backend](https://github.com/carls-rodrigues/corelab-api-challenge)
+
+- Em Produção --> [CoreNotes live](https://clab-web-challenge.vercel.app/)
 
 
 ## Setup
-- download or clone the repository
-- run `npm install`
-- ...
+1. Clonar o repositório:
 
+```bash
+git clone https://github.com/carls-rodrigues/clab-web-challenge
+cd clab-web-challenge
+```
+
+2. Instalar depêndencias
+
+```bash
+npm install or similar
+```
+
+3. Criar um arquivo '.env.local' na pasta raíz do projeto e inserir
+
+```bash
+NEXT_PUBLIC_API="http://localhost:8080" Ou "https://corelab-api-challenge-pink.vercel.app"
+```
+
+4. Iniciar aplicação
+
+```bash
+npm run dev
+```
 
 ## Table of Content:
 
@@ -19,13 +42,14 @@ Access my site at [https://clab-web-challenge.vercel.app/](https://clab-web-chal
 - [Screenshots](#screenshots)
 
 ## About The App
-This web application allows users to create, manage, and organize their notes efficiently. Built with a responsive and intuitive interface, the application is designed to work seamlessly across all devices, providing a user-friendly experience whether you're on a desktop or mobile.
+  Essa aplicação foi contruída com Next.Js e Tailwind.
+
 ### Features
 
-- **Create Notes:** Add new note.
-- **Edit & Delete Notes:** Update or remove notes as needed, giving you full control over your notes list.
-- **Responsive Design:** The application is fully responsive.
-- **Persistent Storage:** The notes are stored using an API, ensuring that data is separated by each user.
+- **Criar Notas:** Add nova nota.
+- **Editar & Deletar Notas:** Atualzar ou remover notas como necessário, dando o total controle sobre suas notas.
+- **Responsive Design:** A aplicação é completamente responsiva.
+- **Persistent Storage:** As notas são armazenadas usando uma api e cada usuário só tem acesso as suas notas criadas.
 
 ## Technologies
 Next.js and Tailwind

@@ -1,7 +1,7 @@
 "use client";
 
 import { getCookie } from "cookies-next";
-import { createContext, useEffect, useRef, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { Bounce, toast, TypeOptions } from "react-toastify";
 
 import { type Note, type Notes } from "@/@types/note";
@@ -27,7 +27,6 @@ export default function NotesProvider({
 }: {
   children: React.ReactNode;
 }) {
-  const isFirstRender = useRef(true);
   const [loading, setLoading] = useState<boolean>(true);
   const [notes, setNotes] = useState<Notes>([]);
   const totalFavorites = notes.filter((note) => note.favorite).length;
@@ -138,10 +137,6 @@ export default function NotesProvider({
   };
 
   useEffect(() => {
-    if (isFirstRender.current) {
-      isFirstRender.current = false;
-      return;
-    }
     const handleFetchNotes = async () => {
       const userId = getCookie("user_id");
       if (!userId) return;

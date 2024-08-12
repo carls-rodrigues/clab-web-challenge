@@ -6,9 +6,7 @@ import useTheme from "./hooks/useTheme";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const RootProvider = ({
-  children,
-}: Readonly<{ children: React.ReactNode }>) => {
+export const RootProvider = ({ children }: { children: React.ReactNode }) => {
   const { theme } = useTheme();
   return (
     <html lang="en" className={theme}>

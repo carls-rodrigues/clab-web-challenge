@@ -73,7 +73,6 @@ export default function NotesProvider({
       await api.updateNote(note);
       notify("success", "Atualizado");
     } catch (error) {
-      console.error("Error updating note", error);
       notify("error", "Erro ao atualizar nota");
     }
   };

@@ -13,7 +13,7 @@ export default function Modal({ show, children }: PropsWithChildren<Props>) {
   return (
     <div
       className={cn(
-        "absolute inset-0 bg-red-500",
+        "absolute inset-0 bg-primary/30 backdrop-blur-sm",
         "flex items-center justify-center",
       )}
     >

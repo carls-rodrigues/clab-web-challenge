@@ -46,7 +46,7 @@ export default function Card({ note, colors }: Props) {
     setEditableText((prev) => {
       const state = !prev;
       if (!state) {
-        handleUpdateCard().then(() => console.log("Card updated"));
+        handleUpdateCard();
       }
       return state;
     });
@@ -90,9 +90,7 @@ export default function Card({ note, colors }: Props) {
     setFavoriteValue(false);
   };
 
-  useEffect(() => {
-    console.log(colorValue);
-  }, [colorValue]);
+  useEffect(() => {}, [colorValue]);
   useEffect(() => {
     if (titleValue && contentValue) {
       setShowButton(true);

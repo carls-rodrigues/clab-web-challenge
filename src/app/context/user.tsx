@@ -1,5 +1,6 @@
 "use client";
 
+import axios from "axios";
 import { getCookie, setCookie } from "cookies-next";
 import { createContext, useEffect, useState } from "react";
 
@@ -34,6 +35,7 @@ export default function UserProvider({
         .then((response) => {
           setUserId(response.id);
           setCookie("user_id", response.id);
+          axios.defaults.headers.user_id = response.id;
         })
         .catch((error) =>
           console.error({ message: "Error creating user", error }),

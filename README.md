@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Title
+Corelab Web Challenge
 
-## Getting Started
+## Demo link:
+Access my site at [https://clab-web-challenge.vercel.app/](https://clab-web-challenge.vercel.app/)
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Setup
+- download or clone the repository
+- run `npm install`
+- ...
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Table of Content:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Setup](#setup)
+- [About The App](#about-the-app)
+- [Technologies](#technologies)
+- [Screenshots](#screenshots)
 
-## Learn More
+## About The App
+This web application allows users to create, manage, and organize their notes efficiently. Built with a responsive and intuitive interface, the application is designed to work seamlessly across all devices, providing a user-friendly experience whether you're on a desktop or mobile.
+### Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Create Notes:** Add new note.
+- **Edit & Delete Notes:** Update or remove notes as needed, giving you full control over your notes list.
+- **Responsive Design:** The application is fully responsive.
+- **Persistent Storage:** The notes are stored using an API, ensuring that data is separated by each user.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies
+Next.js and Tailwind
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Screenshots
+[![empty-light.png](https://i.postimg.cc/sXW9DbDp/empty-light.png)](https://postimg.cc/dkqT5HC1)
+[![empty-dark.png](https://i.postimg.cc/fyh735J1/empty-dark.png)](https://postimg.cc/HcB8Rw0t)
+[![new-note-light.png](https://i.postimg.cc/RZ07nWZC/new-note-light.png)](https://postimg.cc/rKv0BF47)
+[![new-note-dark.png](https://i.postimg.cc/rFjGm1cY/new-note-dark.png)](https://postimg.cc/6y74bG8d)
+[![new-note-created-light.png](https://i.postimg.cc/3xbgj3kX/new-note-created-light.png)](https://postimg.cc/sM7Qsd9x)
+[![new-note-created-dark.png](https://i.postimg.cc/BQ4c4YWK/new-note-created-dark.png)](https://postimg.cc/hhZ700tD)
+[![edit-note-text.png](https://i.postimg.cc/tJt3FP6J/edit-note-text.png)](https://postimg.cc/SYRYhnDb)
+[![edit-color.png](https://i.postimg.cc/nrzm95nR/edit-color.png)](https://postimg.cc/Q92CRf91)
+[![deleted-note.png](https://i.postimg.cc/kgMcFjfm/deleted-note.png)](https://postimg.cc/xc7M93wx)

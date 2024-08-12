@@ -18,7 +18,6 @@ export default function ThemeProvider({
   children: React.ReactNode;
 }) {
   const [theme, setTheme] = useState<Theme | string>("");
-  const [loadingTheme, setLoadingTheme] = useState(true);
 
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
@@ -32,7 +31,6 @@ export default function ThemeProvider({
       setCookie("theme", "light");
     }
     setTheme(cookie || "light");
-    setLoadingTheme(false);
   }, []);
 
   return (

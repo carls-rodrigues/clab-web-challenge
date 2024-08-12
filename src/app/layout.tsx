@@ -3,7 +3,9 @@ import "react-toastify/dist/ReactToastify.css";
 
 import type { Metadata } from "next";
 
+import NotesProvider from "./context/notes";
 import ThemeProvider from "./context/theme";
+import UserProvider from "./context/user";
 import { RootProvider } from "./layout-provider";
 
 export const metadata: Metadata = {
@@ -49,7 +51,11 @@ export default function RootLayout({
 }>) {
   return (
     <ThemeProvider>
-      <RootProvider>{children}</RootProvider>
+      <UserProvider>
+        <NotesProvider>
+          <RootProvider>{children}</RootProvider>
+        </NotesProvider>
+      </UserProvider>
     </ThemeProvider>
   );
 }

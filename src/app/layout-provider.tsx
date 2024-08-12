@@ -14,18 +14,20 @@ export const RootProvider = ({ children }: { children: React.ReactNode }) => {
   const { loading } = useNotes();
   return (
     <html lang="en" className={theme}>
-      <body className={inter.className}>{children}</body>
-      <Modal show={loading}>
-        <ThreeCircles
-          visible={true}
-          height="100"
-          width="100"
-          color="#FFA000"
-          ariaLabel="three-circles-loading"
-          wrapperStyle={{}}
-          wrapperClass=""
-        />
-      </Modal>
+      <body className={inter.className}>
+        {children}
+        <Modal show={loading}>
+          <ThreeCircles
+            visible={true}
+            height="100"
+            width="100"
+            color="#FFA000"
+            ariaLabel="three-circles-loading"
+            wrapperStyle={{}}
+            wrapperClass=""
+          />
+        </Modal>
+      </body>
     </html>
   );
 };

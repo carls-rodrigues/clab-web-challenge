@@ -16,7 +16,7 @@ git clone https://github.com/carls-rodrigues/clab-web-challenge
 cd clab-web-challenge
 ```
 
-2. Instalar depêndencias
+2. Instalar dependencias
 
 ```bash
 npm install or similar
